@@ -13,7 +13,7 @@ export default class Header extends Component {
                 <nav>
                     <div className='logo'><NavLink to='/' className='link'>AbhiShek</NavLink></div>
                     <ul className={this.state.isOpen ? "navLinks" : "navLinks open"}>
-                    <li><NavLink to='/' className='link' activeClassName='OnActiveClass'>home</NavLink></li>
+                    <li><NavLink to='/' className='link' >home</NavLink></li>
                         <li><NavLink to='/about-us' className='link' activeClassName='OnActiveClass'>about-us</NavLink></li>
                         <li><NavLink to='/contact-us' className='link' activeClassName='OnActiveClass'>contact-us</NavLink></li>
                     </ul>

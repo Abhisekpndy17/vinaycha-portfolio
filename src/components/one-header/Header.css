@@ -67,9 +67,9 @@ nav .navLinks li .link:hover{
     }
     
     .hamburger .line{
-        width: 50px;
-        height: 50px;
-        border-radius: 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 0px;
         background: url(../images/menu.png) no-repeat;
         background-size: cover;
         transition: 1s ease;
@@ -88,7 +88,7 @@ nav .navLinks li .link:hover{
         right: -100%;
         top: 0vh;
         height: 60vh;
-        width: 35%;
+        width: 45%;
         background: #008877;
         border-radius: 10px;
         padding: 10px;
