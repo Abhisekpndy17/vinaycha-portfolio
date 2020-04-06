@@ -1,0 +1,24 @@
+footer{
+    width: 100%;
+    margin: 0px auto;
+    border-radius: 10px;
+    
+}
+
+footer .footer-container{
+    width: 90%;
+    margin: 0px auto;
+    box-shadow: inset 1px 4px 10px #ddd;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px , 1fr));
+    grid-gap: 10px;
+}
+
+.footer-container .footer-items{
+    height: 30vh;
+    width: 290px;
+    border-radius: 20px;
+    box-shadow: inset 2px 2px 5px #333;
+    
+}

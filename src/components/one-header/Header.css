@@ -1,0 +1,104 @@
+.header{
+    width: 100%;
+}
+.header nav{
+    width: 80%;
+    margin: 0px auto;
+    height: 12vh;
+    background: #008877;
+    box-shadow: 1px 1px 6px #000;
+    border-radius: 2px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo .link{
+    text-decoration: none;
+    color: #fff;
+    font-family: cursive;
+    line-height: 10vh;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+nav .navLinks{
+    position: relative;
+    display: flex;
+    list-style: none;
+}
+nav .navLinks li{
+    padding: 0px 10px;
+    
+}
+
+nav .navLinks li .link{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 7px 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px #000;
+    transition: .3s ease;
+}
+nav .navLinks li .link:hover{
+    padding: 8px 17px;
+}
+.OnActiveClass{
+    background: #ff6464;
+}
+
+
+@media screen and (max-width:768px){
+
+    .header nav{
+        width: 100%;
+        margin: 0px auto;
+    }
+    .hamburger {
+        position: fixed;
+        right: 10px;
+        border-radius: 10px;
+        margin: 0px 5px;            
+        padding: 0px;
+        cursor: pointer;
+    }
+    
+    .hamburger .line{
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        background: url(../images/menu.png) no-repeat;
+        background-size: cover;
+        transition: 1s ease;
+    }
+    .line.close{
+        background: url(../images/multi.png) no-repeat;
+        border-radius: 50%;
+        background-size: cover;
+    }
+    .hamburger .line img{
+        height: 100%;
+        width: auto;
+    }
+    nav .navLinks{
+        position: fixed;
+        right: -100%;
+        top: 0vh;
+        height: 60vh;
+        width: 35%;
+        background: #008877;
+        border-radius: 10px;
+        padding: 10px;
+        transition: 1s ease;
+    }
+    .navLinks.open{
+        right: 0%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+
+    }
+}
